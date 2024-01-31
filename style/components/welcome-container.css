@@ -1,0 +1,124 @@
+.welcome-container{
+    padding: 80px 0 100px;
+}
+.welcome{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+.welcome-container h4{
+    position: relative;
+    font-size: 30px;
+    line-height: 1.43333;
+    color: #333;
+    font-family: "Poppins";
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 2.5em;
+}
+.welcome-container h4::after{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+
+    content: '';
+    position: relative;
+    display: block;
+    height: 1px;
+    /* width: 35px; */
+    margin-top: 15px;
+    background: #03d41c;
+    will-change: transform, opacity;
+}
+.welcome-row{
+    display: flex;
+    /* max-width: 1400px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins";
+    color: #333;
+}
+.welcome-item{
+    /* padding-left: 25px;
+    padding-right: 25px;
+    text-align: left; */
+    display: flex;
+}
+
+.left-item i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 100%;
+    color: #fff;
+    /* top: 3px; */
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background: #333;
+    /* box-shadow: 0 0 0 4px #333333; */
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+}
+.left-item i:hover{
+    right: 0;
+    color: #fff;
+    background: #03d41c;
+}
+.left-item i::after{
+    content: "";
+    position: absolute;
+    /* background: #03d41c; */
+    border-radius: 100%;
+    transition: .3s;
+    z-index: -1;
+    width: 0;
+    height: 0;
+}
+.left-item i:hover::after{
+    width: 2.4em;
+    height: 2.4em;
+    box-shadow: 0 0 0 8px #03d41b63;
+}
+
+.body-item{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 13px;
+    color: #333;
+}
+.body-item p:first-child{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.34167;
+    color: #000;
+}
+.body-item p:nth-child(2){
+    margin-top: 16px;
+    line-height: 2em;
+}
+
+@media(max-width: 1200px){
+    .welcome-row{
+        padding: 0;
+        margin: 50px 0;
+        flex-direction: column;
+    }
+    .welcome-container{
+        padding: 40px 0 50px;
+    }
+}

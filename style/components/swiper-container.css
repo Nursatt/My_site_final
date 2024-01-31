@@ -1,0 +1,245 @@
+.swiper-container{
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.474)), url("../../img/slide-3.jpg");
+    /* background-position: center center; */
+    background-size: cover;
+    padding: 100px 0;
+    z-index: -1;
+}
+.second{
+    /* background-position: 50% 5%; */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.474)), url("../../img/slide-4.jpg");
+}
+.third{
+    /* background-position: 50% 5%; */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.244), rgba(0, 0, 0, 0.474)), url("../../img/slide-5.jpg");
+}
+/* div.swiper-container-text-center h2, div.swiper-container-text-center h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins/Poppins-Bold.ttf");
+}
+.swiper-container-text-center h2{
+    color: #fff;
+    font-size: 60px;
+    font-family: "Poppins-Bold";
+    text-transform: uppercase;
+}
+.second h2{
+    text-align: center;
+}
+.third{
+    display: flex;
+    justify-content: start;
+    padding-left: 150px;
+}
+
+.swiper-container-text-container h5{
+    font-family: "Poppins-Bold";
+    text-transform: uppercase;
+    color:#fff;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    max-width: 620px;
+    text-align: center;
+}
+
+div.swiper-button{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 50px;
+}
+@font-face {
+    font-family: "Poppins-regular";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+}
+div.swiper-button a{
+    position: relative;
+    color: #fff;
+    font-family: "Poppins-regular";
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background-color: #03d41c;
+    margin-left: 30px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    /* border: 1px solid #000; */
+    z-index: 1;
+    transition: .4s;
+}
+.second div.swiper-button a{
+    border: none;
+}
+.third div.swiper-button{
+    justify-content: space-between;
+    width: 63%;
+}
+.third div.swiper-button a{
+    margin-left: 0;
+}
+.third h5{
+    text-align: left;
+    margin-top: 20px;   
+    font-size: 40px;
+    line-height: 1.35;
+}
+div.swiper-button a::after{
+    content: "";
+    position: absolute;
+    background-color: #03d41b00;
+    width: 100%;
+    height: 0;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    transition: .2s;
+    z-index: -1;
+}
+div.swiper-button a:hover::after{
+    height: 100%;
+    background-color: #000000;
+}
+div.swiper-button a:hover{
+    color: #03d41c;
+    z-index: 1;
+}
+/* .swiper-container-text-center{
+    
+} */
+.swiper-buttons-prevNext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10%;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+    position: absolute;
+    top: 65%;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -30px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .33s;
+    z-index: 1;
+    font-size: 30px;
+}
+
+.swiper-button-prev{
+    left: 50px; 
+}
+.swiper-button-next{
+    right: 50px;
+}
+.swiper-button-prev i,.swiper-button-next i{
+    padding: 15px;
+    transition: 0.4s;
+    transform: scale(100%);
+}
+.swiper-button-prev i:hover,.swiper-button-next i:hover{
+    opacity: 100%;
+    transform: scale(130%);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media(max-width: 1200px){
+    .swiper-container-text-container h2{
+        font-size: 44px;
+        text-align: center;
+    }
+    .third .swiper-container-text-container h2{
+        font-size: 50px;
+        text-align: left;
+    }
+    .third .swiper-container-text-container h5{
+        font-size: 30px;
+        text-align: left;
+    }
+    .third div.swiper-button{
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+    .third div.swiper-button a{
+        margin-left: 0;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: -30px;
+        color: #fff;
+        background-color: #333;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .33s;
+        z-index: 1;
+        font-size: 10px;
+    }
+
+}
+@media(max-width: 700px){
+    .swiper-container-text-container h2{
+        font-size: 34px;
+        text-align: center;
+    }
+    .swiper-container-text-container h5{
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    div.swiper-button a{
+        margin-left: 0;
+    }
+    div.swiper-button{
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+    .third .swiper-container-text-container h2{
+        font-size: 30px;
+        text-align: left;
+    }
+    .third .swiper-container-text-container h5{
+        font-size: 20px;
+        text-align: left;
+        padding: 0;
+    }
+    .third div.swiper-button{
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+    .third div.swiper-button a{
+        margin-left: 0;
+    }
+    .swiper-buttons-prevNext{
+        opacity: 0;
+    }
+}

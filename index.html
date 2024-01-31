@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+    <script src="https://kit.fontawesome.com/2cebbcbad6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style/all.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_item">
+            <div class="header_item_left">
+                <p>Business Consulting</p>
+            </div>
+            <div class="header_item_right">
+                <div class="header_item_right_1">
+                    <a href="">Sign In</a>
+                    <a href="">Create an Account</a>
+                </div>
+                <div class="header_item_right_2">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-vimeo"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_menu">
+        <div class="header_menu_item">
+            <div class="button-menu" onclick="changeMenu()">
+                    <i class="fa-solid fa-bars"></i>
+            </div>
+            <div> 
+            <a href="">
+                <img src="/img/logo-180x50.png" alt="logo">
+            </a>
+            </div>
+            <div id="header_menu_left">
+                <div class="header_menu_item">
+                    <ul class="menu_item-nav">
+                        <li class="left-menu-button"><a href="">Get a quote</a></li>
+                        <li><a href="#" onclick="scrollToTop(event)">HOME</a></li>
+                        <li><a href="#" onclick="scrollToSection('services', event)">SERVICES</a></li>
+                        <li><a href="#" onclick="scrollToSection('about', event)">ABOUT</a></li>
+                        <li><a href="#" onclick="scrollToSection('portfolio', event)">PORTFOLIO</a></li>
+                        <li><a href="#" onclick="scrollToSection('team', event)">TEAM</a></li>
+                        <li><a href="#" onclick="scrollToSection('news', event)">NEWS</a></li>
+                        <li><a href="#" onclick="scrollToSection('clients', event)">CLIENTS</a></li>
+                        <li><a href="#" onclick="scrollToSection('contacts', event)">CONTACTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_menu_item">
+            <ul class="menu_item-nav">
+                <li><a href="#" onclick="scrollToTop(event)">HOME</a></li>
+                <li><a href="#" onclick="scrollToSection('services', event)">SERVICES</a></li>
+                <li><a href="#" onclick="scrollToSection('about', event)">ABOUT</a></li>
+                <li><a href="#" onclick="scrollToSection('portfolio', event)">PORTFOLIO</a></li>
+                <li><a href="#" onclick="scrollToSection('team', event)">TEAM</a></li>
+                <li><a href="#" onclick="scrollToSection('news', event)">NEWS</a></li>
+                <li><a href="#" onclick="scrollToSection('clients', event)">CLIENTS</a></li>
+                <li><a href="#" onclick="scrollToSection('contacts', event)">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="header_menu_item_button">
+            <a href="">Get a quote</a>
+        </div>
+        <div class="menu_right">
+                <div class="button-menu" onclick="changeMenuRight()">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div id="header_menu_right">
+                    <div class="header_item">
+                        <div class="header_item_left">
+                            <p>Business Consulting</p>
+                        </div>
+                        <div class="header_item_right">
+                            <div class="header_item_right_1">
+                                <a href="">Sign In</a>
+                                <a href="">Create an Account</a>
+                            </div>
+                            <div class="header_item_right_2">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-google"></i></a>
+                                <a href=""><i class="fa-brands fa-vimeo"></i></a>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="swiper-buttons-prevNext">
+        <div class="swiper-button-prev" id="prevArrow">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next" id="nextArrow">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+    <div class="swiper">
+        <div>
+            <div class="swiper-container">
+                <div class="swiper-container-text-center">
+                    <div class="swiper-container-text-container" >
+                        <h2 >Welcome to CorpAdvise</h2>
+                        <h5>Our company provides services for small and medium businesses located worldwide.</h5>
+                        <div class="swiper-button">
+                            <a href="">View Services</a>
+                            <a href="">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper-container second">
+                <div class="swiper-container-text-center">
+                    <div class="swiper-container-text-container" >
+                        <h2 >Professional Business</h2><br>
+                        <h2> Consulting Services</h2>
+                        <div class="swiper-button">
+                            <a href="">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="swiper-container third">
+                <div class="swiper-container-text-center">
+                    <div class="swiper-container-text-container" >
+                        <h2 >CorpAdvise</h2>
+                        <h5>Quality Business Advisory</h5>
+                        <div class="swiper-button">
+                            <a href="">View Services</a>
+                            <a href="">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome-container" id="services">
+        <div class="welcome">
+            <h4>WELCOME</h4>
+            <div class="welcome-row">
+                <div class="welcome-item">
+                    <div class="left-item">
+                        <i class="fa-solid fa-feather"></i>
+                    </div>
+                    <div class="body-item">
+                        <p>Business Planning</p>
+                        <p>We can create an efficient and reliable business plan designed to fit your company’s sphere of activity and industry experience.</p>
+                    </div>
+                </div>
+                <div class="welcome-item">
+                    <div class="left-item">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="body-item">
+                        <p>Equity & Venture Funds</p>
+                        <p>Our professional team will be glad to provide you with advice on managing equity and venture capital funds.</p>
+                    </div>
+                </div>
+                <div class="welcome-item">
+                    <div class="left-item">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="body-item">
+                        <p>Strategic Growth</p>
+                        <p>Our company provides a customized approach to advising clients looking to grow through acquisition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-item">
+            <div class="about-text">
+                <div class="about-header" >
+                    <h3>ABOUT US</h3>
+                    <p>CorpAdvise is a leading firm of business managers and advisors with offices across the USA. Our company was established in 1995. Throughout our history, we have assisted individuals, progressive businesses, and community organizations, with a particular focus on the middle market.</p>
+                </div>
+                <div class="about-body">
+                    <div class="about-body-item">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h4>QUALIFIED EMPLOYEES</h4>
+                        <p>Our team consists of more than 40 qualified and experienced business consultants.</p>
+                        <ul>
+                            <li>Audit & Accounting</li>
+                            <li>Assurance</li>
+                            <li>Voluntary Audit</li>
+                            <li>Due Diligence</li>
+                            <li>Online Support</li>
+                        </ul>
+                        <a class="about-button" href="">read more</a>
+                    </div>
+                    <div class="about-body-item">
+                        <i class="fa-solid fa-wave-square"></i>
+                        <h4>FREE CONSULTATIONS</h4>
+                        <p>We offer free consultations to find out the best possible solutions to your problems.</p>
+                        <ul>
+                            <li>Business Management</li>
+                            <li>Review Engagement</li>
+                            <li>Registered Capital Audit</li>
+                            <li>Tax Reporting</li>
+                            <li>Premium Support</li>
+                        </ul>
+                        <a class="about-button" href="">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <h1>Our Portfolio</h1>
+        <div class="portfolio-item">
+            <a href="">
+                <img src="img/portfolio1.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio2.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio3.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio4.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio5.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio6.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio7.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+            <a href="">
+                <img src="img/portfolio8.jpg">
+                <i class="fa-sharp fa-solid fa-plus fa-2xl"></i>
+            </a>
+        </div>
+    </div>
+    <div class="team" id="team">
+        <h1>Our Team</h1>
+        <p>We are a team of professionals from different backgrounds who share knowledge and expertise in business consulting aiming to provide professional services and support to our clients in accordance with the highest standards.</p>
+        <div class="team-top" id="teamTop">
+            <!-- <button>male</button>
+            <button onclick="filterItems('all')">all</button>
+            <button>female</button> -->
+        </div>
+        <div class="team-item" id="teamItem">
+            <!-- <a href="">
+                <img src="img/team1.jpg" alt="">
+                <h3>Barbara Young</h3>
+                <p>CEO, Founder</p>
+            </a>
+
+            <a href="">
+                <img src="img/team2.jpg" alt="">
+                <h3>Bryan Thompson</h3>
+                <p>Finance Manager</p>
+            </a>
+            <a href="">
+                <img src="img/team3.jpg" alt="">
+                <h3>Paul Walker</h3>
+                <p>Marketing Manager</p>
+            </a>   -->
+        </div>
+    </div>
+    <div class="corpadvise">
+        <div class="corpadvise-item">
+            <div class="corpadvise-text">
+                <h4>
+                    <span>CorpAdvise</span>
+                    <span>is your #1 quality business solutions provider</span>
+                </h4>
+                <p>We are always ready to help your business develop.</p>
+            </div>
+            <div class="corpadvise-button">
+                <a href="">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="RecentNews" id="news">
+        <div class="RecentNews-text">
+            <h4>Recent News</h4>
+        </div>
+        <div class="RecentNews-body">
+            <div class="RecentNews-item">
+                <a href="">
+                    <img src="img/RecentNews1.jpg" alt="">
+                </a>
+                <h5>
+                    <a href="">Achieving Small Business Success</a>
+                </h5>
+                <h6>
+                    <a href="">Jan.20, 2018 <span>by Brian Williamson</span></a>
+                </h6>
+                <p>
+                    To a small business owner, success could mean a double-digit growth rate, opening a second location, taking a vacation, or simply making payroll. There is no one single answer. Or is there?
+                </p>
+            </div>
+
+            <div class="RecentNews-item">
+                <a href="">
+                    <img class="image_2" src="img/RecentNews2.jpg" alt="">
+                </a>
+                <div class="caption">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+
+
+                <h5>
+                    <a href="">Research is What Makes an Effective Business Plan</a>
+                </h5>
+                <h6>
+                    <a href="">Jan.20, 2018 <span>by Brian Williamson</span></a>
+                </h6>
+                <p>
+                    Every successful business must start with a business plan. That’s because a business plan is the blueprint that gives your company direction and focus. It basically acts as...
+                </p>
+            </div>
+
+            <div class="RecentNews-item">
+                <a href="">
+                    <img src="img/RecentNews3.jpg" alt="">
+                </a>
+                <h5>
+                    <a href="">Why Business Planning is Important</a>
+                </h5>
+                <h6>
+                    <a href="">Jan.20, 2018 <span>by Brian Williamson</span></a>
+                </h6>
+                <p>
+                    A business plan is an important tool for managing and growing your business. A well-designed plan lays out a vision of growth and the steps needed to get there. A plan is also…
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="comments" id="clients">
+        <h4>
+            WHAT PEOPLE SAY
+        </h4>
+        <div class="comments-body">
+            <div class="comments-item">
+                <img src="img/comments1.jpg" alt="">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                    I appreciate what you’ve done to help my small company develop and thrive in that market niche that we specialize in. Your business consulting experts are the best! Your experience and unique approach to your clients are exceptional.
+                </p>
+                <span>
+                    Jane Smith
+                </span>
+            </div>
+    
+            <div class="comments-item">
+                <img src="img/comments2.jpg" alt="">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>
+                    I was impressed by the quality of what your specialists did. They quickly found out what was the main problem of my company and helped me form a correct strategy for my future business development. I definitely recommend this team.
+                </p>
+                <span>
+                    James Wilson
+                </span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="info">
+        <div class="info-item">
+            <i class="fa-solid fa-mug-hot"></i>
+            <p data-num="500">0</p>
+            <span>Projects Done</span>
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-cube"></i>
+            <p data-num="74">0</p>
+            <span>Positive Reviews</span>
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-chevron-up fa-rotate-270"></i>
+            <i class="fa-solid fa-chevron-up fa-rotate-90"></i>
+            <p data-num="99">0</p>
+            <p class="percent"><i class="fa-solid fa-percent"></i></p>
+            <span>Happy Customers</span>
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-glasses"></i>
+            <p data-num="147">0</p>
+            <span>Partners</span>
+        </div>  
+    </div>
+    <div class="communications" id="contacts">
+        <div class="get">
+            <h4>
+                Get in Touch
+            </h4>
+            <div class="name">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Your name">
+            </div>
+            
+            <div class="mail">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" placeholder="Your e-mail">
+            </div>
+
+            <div class="message">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <input type="text" placeholder="Your message">
+            </div>
+            <button>send</button>
+        </div>
+        <div class="map">
+            add map
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-item">
+            <a href="">
+                <img src="/img/logo-180x50.png" alt="logo">
+            </a>
+            <p>
+                CorpAdvise is a professional business advisory company offering a comprehensive range of outsourced business solutions for small-medium enterprises and owner managers. Our range of services includes business planning & strategy development as well as taxation management and accounting support for our clients.
+            </p>
+        </div>
+        <div class="footer-item navigation">
+            <h6>
+                Navigation
+            </h6>
+            <ul>
+                <li>Services</li>
+                <li>About Us</li>
+                <li>Portfolio</li>
+                <li>Our Team</li>
+                <li>Testimonials</li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h6>
+                Contacts
+            </h6>
+            <div class="contacts">
+                <div class="contacts-item">
+                    <ul>
+                        <li>Address 4578 Marmora Road, Glasgow, D04 89GR</li>
+                        <li>Phones: (800) 123-0045; (800) 123-0045</li>
+                        <li>E-mail: <span>info@demolink.org</span></li>
+                        <li>We are open Mn-Fr: 10 am-8 pm</li>
+                    </ul>
+                </div>
+                <div class="contacts-item">
+                    <ul>
+                        <li>Address 2130 Fulton Street San Diego, CA 94117-1080 USA</li>
+                        <li>Phones: (800) 123-0045; (800) 123-0045</li>
+                        <li>E-mail: <span>info@demolink.org</span></li>
+                        <li>We are open Mn-Fr: 10 am-8 pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-last">
+        <div class="footer-last-body">
+            <div class="footer-last-item">
+                <p>
+                    CorpAdvise © 2024. All Rights Reserved.
+                </p>
+            </div>
+            <div class="footer-last-item">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-vimeo-v"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/header_menu_left.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/counter-info.js"></script>
+    <script src="js/filter-team.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+.RecentNews{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.RecentNews-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.43333;
+    color: #333;
+}
+.RecentNews-text h4::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 50px;
+    margin-top: 15px;
+    background: #03d41c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RecentNews-body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 70px;
+}
+.RecentNews-item{
+    width: calc(33.33% - 30px);
+    position: relative;
+}
+.RecentNews-item img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 320ms ease-in-out;
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    display: block; /* Избегаем пробелов между изображением и его родителем */
+}
+
+.RecentNews-item img.image_2:hover{
+    transform: none;
+    box-shadow: none;
+}
+.RecentNews-item img.image_2{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.RecentNews-item .caption{
+    position: absolute;
+    width: 100%; /* Занимает всю ширину .RecentNews-item */
+    height: 55%; /* Занимает всю высоту .RecentNews-item */
+    top: 0;
+    background-color: rgba(21, 21, 21, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.RecentNews-item .caption:hover{
+    width: 100%; /* Занимает всю ширину .RecentNews-item */
+    height: 55%;
+    background-color: rgba(21, 21, 21, 0.5);
+    color: white;
+}
+
+
+.RecentNews-item img:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.25);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+.RecentNews-item h5{
+    margin-top: 30px;
+}
+.RecentNews-item h5 a{
+    font-family: "Poppins";
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.44444;
+    text-transform: uppercase;
+}
+.RecentNews-item h6{
+    margin-top: 15px;
+}
+.RecentNews-item h6 a,.RecentNews-item span{
+    font-size: 14px;
+    font-style: italic;
+}
+.RecentNews-item h6 a{
+    color: #03d41c;
+    transition: .4s;
+}
+.RecentNews-item h6 a:hover{
+    color: #000;
+}
+.RecentNews-item span{
+    color: #888;
+    transition: .4s;
+}
+.RecentNews-item span:hover {
+    color: #03d41c;
+}
+.RecentNews-item p{
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 400;
+    color: #333;
+}
+
+@media(max-width:1000px){
+    .RecentNews-body{
+        flex-direction: column;
+    }
+    .RecentNews-item{
+        margin-top: 30px;
+        width:calc(100%);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .RecentNews-item img,.RecentNews-item img.image_2{
+        width: 100%;
+    }
+    .RecentNews-item .caption:hover{
+        width: 100%; /* Занимает всю ширину .RecentNews-item */
+    }
+    .RecentNews-item .caption{
+        display: none;
+    }
+}
